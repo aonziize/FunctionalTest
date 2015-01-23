@@ -8,7 +8,7 @@ public class StartUp {
 
 	public static void main(String[] args) throws Exception {
 
-		String xTS[][] = null;
+		String xTS[][] = null; 
 		String xTC[][] = null;
 		String vKeyword, vIP1, vIP2;
 		String xlFileInput = "D:\\selenium\\TRUEMOVE\\TrueData.xlsx";
