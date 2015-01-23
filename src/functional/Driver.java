@@ -1,7 +1,5 @@
 package functional;
 
-import org.openqa.selenium.NoSuchElementException;
-
 public class Driver { 
 	private Utility util = new Utility();
 
