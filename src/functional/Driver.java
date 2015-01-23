@@ -2,7 +2,7 @@ package functional;
 
 import org.openqa.selenium.NoSuchElementException;
 
-public class Driver {
+public class Driver { 
 	private Utility util = new Utility();
 
 	public String keyword_executor(String vKeyword, String vIP1, String vIP2,
