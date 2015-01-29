@@ -1,12 +1,13 @@
 package functional;
+
 import org.openqa.selenium.NoSuchElementException;
 
-public class Driver { 
+public class Driver {
 	private Utility util = new Utility();
 
 	public String keyword_executor(String vKeyword, String vIP1, String vIP2,
 			int row) throws Exception {
-    
+
 		String flag = "false";
 
 		try {
@@ -137,7 +138,7 @@ public class Driver {
 
 	// capture picture
 	public void takeScreenShot() {
-	
+
 		// cap picture error
 		// vflag = "Fail";
 		// File scrFile = ((TakesScreenshot)driver)
@@ -146,5 +147,4 @@ public class Driver {
 		// "D:\\selenium\\TRUEMOVE\\picture_cap\\picture_caption_truemaxx"
 		// + tc + ".png"));
 	}
-
 }
