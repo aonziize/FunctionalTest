@@ -46,7 +46,8 @@ public class StartUp {
 								if (!vError.equals("No Error")) {
 									vflag = "Fail";
 									// cap picture error
-									keywordDriver.takeScreenShot();
+									keywordDriver.takeScreenShot(xTC[tc][1],
+											xTD[td][0]);
 									// File scrFile = ((TakesScreenshot)driver)
 									// .getScreenshotAs(OutputType.FILE);
 									// FileUtils.copyFile(scrFile, new File(

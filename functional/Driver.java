@@ -1,6 +1,15 @@
 package functional;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 public class Driver {
 	private Utility util = new Utility();
@@ -137,14 +146,16 @@ public class Driver {
 	}
 
 	// capture picture
-	public void takeScreenShot() {
+	public void takeScreenShot(String xTC, String xTD) throws IOException {
 
-		// cap picture error
-		// vflag = "Fail";
-		// File scrFile = ((TakesScreenshot)driver)
-		// .getScreenshotAs(OutputType.FILE);
-		// FileUtils.copyFile(scrFile, new File(
-		// "D:\\selenium\\TRUEMOVE\\picture_cap\\picture_caption_truemaxx"
-		// + tc + ".png"));
+		WebDriver web = util.getWebDriver();
+		SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = new Date();
+		String time = ft.format(date);
+		File scrFile = ((TakesScreenshot) web).getScreenshotAs(OutputType.FILE);
+
+		FileUtils.copyFile(scrFile, new File(
+				"D:\\selenium\\TRUEMOVE\\picture_cap\\TRUEMAXX_" + xTC + "_"
+						+ xTD + "_" + time + ".png"));
 	}
 }

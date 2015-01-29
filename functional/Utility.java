@@ -21,6 +21,14 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 public class Utility {
 	private WebDriver web = null;
 
+	public WebDriver getWebDriver() {
+		return web;
+	}
+
+	public void setWebDriver(WebDriver web) {
+		this.web = web;
+	}
+
 	public boolean browser_open(String browserType, String URL) {
 		switch (browserType) {
 		case "firefox":
@@ -40,16 +48,13 @@ public class Utility {
 		}
 		if (web != null) {
 			web.get(URL);
-			web.manage().timeouts()
-			.implicitlyWait(10, TimeUnit.SECONDS);
+			web.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			return true;
 		} else {
 			return false;
-		}	
-		
-	}
-	
+		}
 
+	}
 
 	public void radio_select(String xPath, String fText) {
 		web.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
