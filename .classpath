@@ -50,5 +50,6 @@
 	<classpathentry kind="lib" path="D:/selenium/Jar/POI_3.11/poi-bin-3.11-20141221/poi-3.11/lib/junit-4.11.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/Jar/POI_3.11/poi-bin-3.11-20141221/poi-3.11/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/Jar/JUnit 4/junit-4.11.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
